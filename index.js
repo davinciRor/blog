@@ -5,7 +5,6 @@ require('./render');
 var result = require('./render').default;
 var express = require('express');
 var application = express();
-console.log(result);
 
 application.get('/', function(req, res) {
   res.send(result);
